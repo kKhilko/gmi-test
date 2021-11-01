@@ -1,6 +1,15 @@
 # gmi-test
 
-This is example of UI Test Automation framework
+This is example of UI Test Automation framework based on Python and pytest
+
+What were implemented:
+  - Two level architecture (test level and fixture)
+  - POM pattern
+  - Parametrized Test case
+  - Cross-browsers
+  - Scrolling
+  - Explicit wait (js function)
+  - XPATH parametrize
 
 
 How to run
