@@ -1,7 +1,4 @@
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class SessionHelper:
@@ -25,7 +22,6 @@ class SessionHelper:
     def is_valid(self):
         try:
             self.get_url()
-            #self.app.wd.current_url
             return True
         except:
             return False

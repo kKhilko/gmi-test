@@ -11,9 +11,7 @@ from pages.session import SessionHelper
 class Application:
     def __init__(self, browser):
         if browser == 'Chrome':
-            chrome_options = Options()
-            chrome_options.add_argument("--window-size=1920,1080")
-            self.wd = webdriver.Chrome(custom.chromedriver, chrome_options=chrome_options)
+            self.wd = webdriver.Chrome(custom.chromedriver)
             self.wd.maximize_window()
         if browser == 'Firefox':
             self.wd = webdriver.Firefox(custom.geckodriver)
